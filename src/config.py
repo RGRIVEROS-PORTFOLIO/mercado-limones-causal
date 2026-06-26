@@ -45,7 +45,7 @@ DTYPE_TRANSFERENCIAS = {
     "fecha_inscripcion_inicial":       "str",   # ídem
     "registro_seccional_provincia":    "str",
     "automotor_origen":                "str",
-    "automotor_anio_modelo":           "float64",  # tiene NaN → no puede ser int
+    "automotor_anio_modelo":           "str",  # tiene NaN → no puede ser int
     "automotor_tipo_codigo":           "str",   # valores mixtos
     "automotor_tipo_descripcion":      "str",
     "automotor_marca_descripcion":     "str",
@@ -53,7 +53,7 @@ DTYPE_TRANSFERENCIAS = {
     "titular_tipo_persona":            "str",
     "titular_domicilio_provincia":     "str",
     "titular_genero":                  "str",
-    "titular_anio_nacimiento":         "float64",  # tiene NaN ocasional
+    "titular_anio_nacimiento":         "str",  # tiene NaN ocasional
     "titular_pais_nacimiento":         "str",
 }
 
@@ -70,12 +70,18 @@ COLUMNAS_0KM = COLUMNAS_TRANSFERENCIAS.copy()
 # PARÁMETROS DE LIMPIEZA
 # ---------------------------------------------------------------------------
 
-# Tipos de trámite a excluir — no responden a dinámica comercial estándar
-# Fuente: análisis tramite_tipo en 01_exploracion.ipynb
-TRAMITES_EXCLUIDOS = [
-    "SUBASTADO",
-    "CLASICO",
-    "SUBASTADO IMPORTADO",
+# Dataset: dnrpa-transferencias-autos (usados)
+# Fuente: value_counts proyecto anterior — 1 solo tipo no comercial
+TRAMITES_EXCLUIDOS_USADOS = [
+    "SUBASTADOS",   # captura "TRANSFERENCIA SUBASTADOS / AFF / CLASICOS"
+]
+
+# Dataset: dnrpa-inscripciones-iniciales-autos (0km)
+# Fuente: probe sobre archivo 202301 — 4 tipos no comerciales
+TRAMITES_EXCLUIDOS_0KM = [
+    "FORM. 05",   # INSCRIPCION INICIAL FORM. 05 SUB. P/DOMINIO
+    "CLASICO",    # INSCRIPCION INICIAL AUTO CLASICO
+    "DICTAMEN",   # INSCRIPCION INICIAL * X DICTAMEN/OFICIO/CERTIF.ANT.
 ]
 
 # Rango válido de año de modelo
