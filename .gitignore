@@ -216,6 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+<<<<<<< HEAD
 
 # Parquet cache — archivos intermedios por mes (pesados, regenerables)
 data/cache/
@@ -228,3 +229,5 @@ data/Raw_Usados/
 
 # Notebooks de experimentación
 notebooks/prueba_pipeline.ipynb
+=======
+>>>>>>> 2ceba9f3d9aadd4fa4e3142520b13cc331e47f5e
