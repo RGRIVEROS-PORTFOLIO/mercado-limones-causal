@@ -244,7 +244,8 @@ Período: Enero 2023 — Mayo 2026
 
 **Rodolfo Gabriel Riveros Lobos**
 Analista de Datos — San Juan, Argentina
-
+[[Linkedin/RGRIVEROS](https://www.linkedin.com/in/rgriveros/)]
+Mail: rgriveros@gmail.com
 [![GitHub](https://img.shields.io/badge/GitHub-RGRIVEROS--PORTFOLIO-black)](https://github.com/RGRIVEROS-PORTFOLIO)
 
 ---
