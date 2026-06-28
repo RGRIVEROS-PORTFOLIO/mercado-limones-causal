@@ -1,3 +1,5 @@
+[Banner](reports/figures/Banner.png)
+
 # Mercado de Limones Argentino — Inferencia Causal
 
 > **¿El mercado de autos 0km deteriora la calidad del mercado de usados?**
