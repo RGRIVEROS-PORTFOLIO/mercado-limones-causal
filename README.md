@@ -1,4 +1,4 @@
-[Banner](reports/figures/Banner.png)
+![Banner](reports/figures/Banner.png)
 
 # Mercado de Limones Argentino — Inferencia Causal
 
